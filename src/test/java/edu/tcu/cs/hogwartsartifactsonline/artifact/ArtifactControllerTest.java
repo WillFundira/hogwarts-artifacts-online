@@ -99,7 +99,7 @@ class ArtifactControllerTest {
 
     @Test
     void testfindArtifactByIdNotFound() throws Exception {
-        // Given, define the controller's dependency
+        // Given, define the controller's dependency.
         given(this.artifactService.findById("1250808601744904191")).willThrow(new ArtifactNotFoundException("1250808601744904191"));
 
         //When and then . MockMvc will perform the fake http requests, so we need a handler
